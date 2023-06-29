@@ -1,0 +1,15 @@
+[Unit]
+Description=Hotspot service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+# Change hotspot config in these line:  |---SSID---|     |-PASS-|  then press [CTRL+X] [Y] [ENTER]
+ExecStart=/usr/bin/lnxrouter --ap wlan0 'STB-armbian' -p ''       -g 192.168.0.1
+
+[Install]
+WantedBy=multi-user.target

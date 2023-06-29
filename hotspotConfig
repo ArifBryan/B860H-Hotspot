@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo nano /etc/systemd/system/hotspot.service
+
+systemctl daemon-reload
+
+echo 'Restarting hotspot service...'
+
+systemctl restart hotspot.service
