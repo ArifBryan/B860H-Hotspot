@@ -6,7 +6,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 apt update
-apt install -y dnsmasq
+apt install -y dnsmasq hostapd
 
 git clone https://github.com/garywill/linux-router
 
