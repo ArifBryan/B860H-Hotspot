@@ -9,6 +9,7 @@ apt update
 apt install -y dnsmasq hostapd
 
 git clone https://github.com/garywill/linux-router
+chmod +x linux-router/lnxrouter
 
 cp linux-router/lnxrouter /usr/bin/
 cp hotspotConfig /usr/bin/
